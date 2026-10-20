@@ -1,0 +1,21 @@
+# OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs and databases
+*.log
+npm-debug.log*
+
+# Node dependencies (if any tools use it)
+node_modules/
+
+# Local environment & IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Antigravity / Agent scratch & temp storage
+.tempmediaStorage/
+scratch/
