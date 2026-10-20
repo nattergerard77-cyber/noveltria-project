@@ -202,5 +202,28 @@ Création et génération intégrale des 24 pages HTML (6 pages × 4 langues) :
   - Distribution Edge CDN globale avec temps de réponse ultra-rapide (< 100ms) et certificat SSL/TLS automatique.
   - Prise en charge native de l'ensemble des 36 pages multilingues (FR, EN, ES, IT, DE, ZH), des assets et des formulaires AJAX.
 
+---
+
+## 8. Intégration du Logo Officiel & du Favicon
+
+### A. Remplacement du Logo dans le Header
+- **Fichier Source** : [`website/assets/images/logo-full.png`](file:///c:/Users/Berenice%20Gnaba/Desktop/noveltria-project/website/assets/images/logo-full.png) (PNG transparent avec globe, monogramme NV et typographie officielle).
+- **Remplacement Universel** : Remplacement des titres textuels par une balise `<img src="..." alt="NOVELTRIA International Trade Services" class="nv-logo">` sur les 6 pages françaises et l'ensemble des 30 pages multilingues.
+- **Calibrage CSS** ([`website/css/style.css`](file:///c:/Users/Berenice%20Gnaba/Desktop/noveltria-project/website/css/style.css)) :
+  - Hauteur fixe de 52px (max 58px) avec `width: auto;` et `object-fit: contain;` pour éviter toute distorsion.
+  - Media query mobile ajustée à 42px de hauteur pour s'intégrer harmonieusement à côté du bouton burger tactile.
+
+### B. Intégration du Logo dans le Footer
+- **Remplacement Visuel** : Intégration du logo complet dans `.nv-footer__brand` avec la classe `.nv-footer__logo` (hauteur 50px, responsive 42px) sur fond sombre institutionnel `#0A2540`.
+- **Rendu Visuel** : La transparence native du fichier PNG garantit une lisibilité parfaite des éléments dorés et blancs sans aucun cadre disgracieux.
+
+### C. Déploiement du Favicon dans le Head
+- **Fichier Source** : [`website/assets/images/favicon.png`](file:///c:/Users/Berenice%20Gnaba/Desktop/noveltria-project/website/assets/images/favicon.png) (symbole du globe avec monogramme NV).
+- **Balise HTML** : `<link rel="icon" type="image/png" href="assets/images/favicon.png">` ajoutée dans la section `<head>` de l'ensemble des 36 pages.
+
+### D. Audit & Validation (624/624 tests réussis)
+- Contrôle scripté via [`tools/verify-multilingual.js`](file:///c:/Users/Berenice%20Gnaba/Desktop/noveltria-project/tools/verify-multilingual.js) confirmant la présence du logo dans le header, du logo dans le footer et du favicon sur les 36 pages du projet.
+
+
 
 

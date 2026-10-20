@@ -257,7 +257,7 @@ function generateIndexHtml(lang) {
   <meta property="og:url" content="https://www.noveltria.com/${lang}/index.html">
   <meta property="og:image" content="https://www.noveltria.com/assets/images/hero-accueil.png">
 
-  <!-- Stylesheet -->
+  <!-- Favicon -->\n  <link rel="icon" type="image/png" href="../assets/images/favicon.png">\n\n  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Schema.org Structured Data -->
@@ -268,7 +268,7 @@ function generateIndexHtml(lang) {
     "name": "NOVELTRIA International Trade Services",
     "alternateName": "NOVELTRIA",
     "url": "https://www.noveltria.com/${lang}/",
-    "logo": "https://www.noveltria.com/assets/images/hero-accueil.png",
+    "logo": "https://www.noveltria.com/assets/images/logo-full.png",
     "description": "${d.metaDesc}",
     "founder": {
       "@type": "Person",

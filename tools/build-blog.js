@@ -222,7 +222,7 @@ function generateBlogHtml(lang) {
   <meta property="og:url" content="https://www.noveltria.com/${lang}/blog.html">
   <meta property="og:image" content="https://images.unsplash.com/photo-1524522173746-f628baad3644?auto=format&fit=crop&w=1200&q=85">
 
-  <!-- Stylesheet -->
+  <!-- Favicon -->\n  <link rel="icon" type="image/png" href="../assets/images/favicon.png">\n\n  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Schema.org Blog Structured Data -->

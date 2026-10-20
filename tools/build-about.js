@@ -209,7 +209,7 @@ function generateAboutHtml(lang) {
   <meta property="og:url" content="https://www.noveltria.com/${lang}/about.html">
   <meta property="og:image" content="https://www.noveltria.com/assets/images/hero-apropos.png">
 
-  <!-- Stylesheet -->
+  <!-- Favicon -->\n  <link rel="icon" type="image/png" href="../assets/images/favicon.png">\n\n  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
 
   <!-- Schema.org Structured Data -->

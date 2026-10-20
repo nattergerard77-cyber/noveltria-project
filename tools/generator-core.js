@@ -228,11 +228,7 @@ function renderHeader(lang, activePage, pageFileName) {
     <!-- Main Navigation Bar -->
     <nav class="nv-main-nav" aria-label="${n.burgerLabel}">
       <a href="index.html" class="nv-brand" aria-label="${n.brandReturn}">
-        <div class="nv-brand__title-wrap">
-          <span class="nv-brand__title">NOVELTRIA</span>
-          <span class="nv-brand__accent">.</span>
-        </div>
-        <span class="nv-brand__subtitle">${n.brandSubtitle}</span>
+        <img src="../assets/images/logo-full.png" alt="NOVELTRIA International Trade Services" class="nv-logo">
       </a>
 
       <div class="nv-nav-links">
@@ -277,8 +273,9 @@ function renderFooter(lang) {
     <div class="container">
       <div class="nv-footer__grid">
         <div class="nv-footer__col-brand">
-          <div class="nv-footer__logo-title">NOVELTRIA<span style="color: var(--color-accent);">.</span></div>
-          <div class="nv-footer__logo-sub">${n.brandSubtitle}</div>
+          <a href="index.html" class="nv-footer__brand" aria-label="${n.brandReturn}">
+            <img src="../assets/images/logo-full.png" alt="NOVELTRIA International Trade Services" class="nv-footer__logo">
+          </a>
           <p class="nv-footer__desc">${n.footerDesc}</p>
         </div>
 

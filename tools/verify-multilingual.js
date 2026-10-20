@@ -84,6 +84,11 @@ langs.forEach(lang => {
         check(`Honeypot #website_hp in ${lang}/${page}`, content.includes('id="website_hp"'));
         check(`form-validation.js included in ${lang}/${page}`, content.includes('form-validation.js'));
       }
+
+      // Check Logo & Favicon
+      check(`Header logo in ${lang}/${page}`, content.includes('logo-full.png') && content.includes('class="nv-logo"'));
+      check(`Footer logo in ${lang}/${page}`, content.includes('logo-full.png') && content.includes('class="nv-footer__logo"'));
+      check(`Favicon in ${lang}/${page}`, content.includes('favicon.png') && content.includes('rel="icon"'));
     }
   });
 });
