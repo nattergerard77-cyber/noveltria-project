@@ -19,3 +19,6 @@ node_modules/
 # Antigravity / Agent scratch & temp storage
 .tempmediaStorage/
 scratch/
+
+.vercel
+.env*
