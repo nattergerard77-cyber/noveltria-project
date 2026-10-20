@@ -185,4 +185,22 @@ Création et génération intégrale des 24 pages HTML (6 pages × 4 langues) :
   - Activation de GitHub Pages avec chiffrement HTTPS forcé.
   - Toutes les 36 pages et les 6 langues sont opérationnelles et accessibles en ligne.
 
+---
+
+## 7. Déploiement en Production Haute Performance sur Vercel
+
+### A. Connexion & Compte
+- **Compte Vercel Lié** : `franckbernardo54-7434`
+- **Intégration Git** : Projet Vercel connecté en continu au dépôt GitHub [`nattergerard77-cyber/noveltria-project`](https://github.com/nattergerard77-cyber/noveltria-project).
+
+### B. Déploiement & Alias Officiel
+- **URL Principale Vercel (Alias Personnalisé)** : [`https://noveltria-project.vercel.app`](https://noveltria-project.vercel.app)
+- **URL de Déploiement Direct** : [`https://website-nine-lilac-d3t77jsxqn.vercel.app`](https://website-nine-lilac-d3t77jsxqn.vercel.app)
+- **Dashboard / Inspecteur Vercel** : [`https://vercel.com/franckbernardo54-7434s-projects/website/DfGHagaFi2nCkqExH2W36LowcNhR`](https://vercel.com/franckbernardo54-7434s-projects/website/DfGHagaFi2nCkqExH2W36LowcNhR)
+- **Caractéristiques de Déploiement** :
+  - Déploiement direct du dossier `website/` à la racine web.
+  - Distribution Edge CDN globale avec temps de réponse ultra-rapide (< 100ms) et certificat SSL/TLS automatique.
+  - Prise en charge native de l'ensemble des 36 pages multilingues (FR, EN, ES, IT, DE, ZH), des assets et des formulaires AJAX.
+
+
 
