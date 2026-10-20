@@ -169,3 +169,20 @@ Création et génération intégrale des 24 pages HTML (6 pages × 4 langues) :
   - Présence du piège anti-spam honeypot `#website_hp` et du script de validation sur toutes les pages de contact.
   - Intégrité parfaite des chemins relatifs (`../`) pour les assets CSS, JS et images.
 
+---
+
+## 6. Déploiement en Production sur GitHub & GitHub Pages
+
+### A. Dépôt GitHub Officiel
+- **URL du Répertoire** : [`https://github.com/nattergerard77-cyber/noveltria-project`](https://github.com/nattergerard77-cyber/noveltria-project)
+- **Branche de Développement Principale** : `main` (contient l'arborescence complète avec `website/`, `tools/`, `docs/`, `memory/`, `agents/`, `skills/`).
+
+### B. Déploiement GitHub Pages (`gh-pages`)
+- **URL du Site en Ligne (Production Live)** : [`https://nattergerard77-cyber.github.io/noveltria-project/`](https://nattergerard77-cyber.github.io/noveltria-project/)
+- **Mécanisme de Déploiement** :
+  - Extraction et synchronisation du sous-dossier `website/` directement à la racine de la branche `gh-pages` (`git subtree push --prefix website origin gh-pages`).
+  - Ajout du fichier `.nojekyll` pour garantir le service direct des fichiers statiques sans parsing Jekyll.
+  - Activation de GitHub Pages avec chiffrement HTTPS forcé.
+  - Toutes les 36 pages et les 6 langues sont opérationnelles et accessibles en ligne.
+
+
