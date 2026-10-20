@@ -242,7 +242,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
+  height: 90px;
   padding: 0 48px;
   background: rgba(10, 37, 64, 0.96);
   backdrop-filter: blur(12px);
@@ -261,11 +261,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nv-logo {
-  height: 52px;
-  max-height: 58px;
+  height: 70px;
+  max-height: 76px;
   width: auto;
   object-fit: contain;
   display: block;
+  transition: transform var(--transition);
+}
+
+.nv-brand:hover .nv-logo {
+  transform: scale(1.02);
 }
 
 .nv-nav-links {
@@ -1162,7 +1167,7 @@ h1, h2, h3, h4, h5, h6 {
     display: none;
   }
   .nv-main-nav {
-    height: 66px;
+    height: 72px;
     padding: 0 20px;
   }
   .nv-nav-links, .nv-nav-cta {
@@ -1175,11 +1180,11 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
   }
   .nv-logo {
-    height: 42px;
-    max-height: 46px;
+    height: 52px;
+    max-height: 56px;
   }
   .nv-footer__logo {
-    height: 42px;
+    height: 48px;
   }
   .hero {
     padding: 70px 20px 60px 20px;
