@@ -224,6 +224,23 @@ Création et génération intégrale des 24 pages HTML (6 pages × 4 langues) :
 ### D. Audit & Validation (624/624 tests réussis)
 - Contrôle scripté via [`tools/verify-multilingual.js`](file:///c:/Users/Berenice%20Gnaba/Desktop/noveltria-project/tools/verify-multilingual.js) confirmant la présence du logo dans le header, du logo dans le footer et du favicon sur les 36 pages du projet.
 
+---
+
+## 9. Ajustement & Agrandissement du Logo dans la Navbar
+
+### A. Calibrage Desktop (Lisibilité Optimale des Détails)
+- **Fichier Modifié** : [`website/css/style.css`](file:///c:/Users/Berenice%20Gnaba/Desktop/noveltria-project/website/css/style.css)
+- **Hauteur du Logo (`.nv-logo`)** : Passée de `52px` à **`70px`** (max `76px`) avec `width: auto;` pour restituer avec netteté les détails du globe, des méridiens et du monogramme NV.
+- **Hauteur de Navbar (`.nv-main-nav`)** : Ajustée de `80px` à **`90px`** avec centrage vertical flexbox (`align-items: center`), assurant un espacement aéré sans écraser les liens de navigation ni le sélecteur multilingue.
+- **Effet Hover** : Subtile transition d'échelle (`transform: scale(1.02)`).
+
+### B. Calibrage Mobile & Tablette
+- **Media Query Mobile (`max-width: 768px`)** :
+  - Hauteur du logo fixée à **`52px`** (largeur auto ~78px).
+  - Hauteur de navbar mobile ajustée à **`72px`** (padding latéral 20px).
+  - Garantit plus de 210px d'espace libre avant le bouton burger, évitant tout débordement ou refoulement hors de l'écran.
+
+
 
 
 
