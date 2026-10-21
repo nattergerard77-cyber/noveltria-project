@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.noveltria.com/sitemap.xml
+Sitemap: https://www.noveltria.online/sitemap.xml

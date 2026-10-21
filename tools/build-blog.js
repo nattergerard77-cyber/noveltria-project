@@ -212,15 +212,31 @@ function generateBlogHtml(lang) {
   <meta name="keywords" content="${d.metaKeywords}">
   <meta name="author" content="Laurent Huiskens">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.noveltria.com/${lang}/blog.html">
+  <link rel="canonical" href="https://www.noveltria.online/${lang}/blog.html">
+
+  <!-- Multilingual Alternate Links (hreflang) -->
+  <link rel="alternate" hreflang="fr" href="https://www.noveltria.online/blog.html">
+  <link rel="alternate" hreflang="en" href="https://www.noveltria.online/en/blog.html">
+  <link rel="alternate" hreflang="es" href="https://www.noveltria.online/es/blog.html">
+  <link rel="alternate" hreflang="it" href="https://www.noveltria.online/it/blog.html">
+  <link rel="alternate" hreflang="de" href="https://www.noveltria.online/de/blog.html">
+  <link rel="alternate" hreflang="zh" href="https://www.noveltria.online/zh/blog.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.noveltria.online/en/blog.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="blog">
+  <meta property="og:site_name" content="NOVELTRIA International Trade Services">
   <meta property="og:locale" content="${blogData[lang].locale || lang}">
   <meta property="og:title" content="${d.ogTitle}">
   <meta property="og:description" content="${d.ogDesc}">
-  <meta property="og:url" content="https://www.noveltria.com/${lang}/blog.html">
+  <meta property="og:url" content="https://www.noveltria.online/${lang}/blog.html">
   <meta property="og:image" content="https://images.unsplash.com/photo-1524522173746-f628baad3644?auto=format&fit=crop&w=1200&q=85">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${d.ogTitle}">
+  <meta name="twitter:description" content="${d.ogDesc}">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1524522173746-f628baad3644?auto=format&fit=crop&w=1200&q=85">
 
   <!-- Favicon -->\n  <link rel="icon" type="image/png" href="../assets/images/favicon.png">\n\n  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">

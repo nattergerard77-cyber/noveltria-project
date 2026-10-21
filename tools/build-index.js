@@ -247,15 +247,31 @@ function generateIndexHtml(lang) {
   <meta name="keywords" content="${d.metaKeywords}">
   <meta name="author" content="Laurent Huiskens">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.noveltria.com/${lang}/index.html">
+  <link rel="canonical" href="https://www.noveltria.online/${lang}/">
+
+  <!-- Multilingual Alternate Links (hreflang) -->
+  <link rel="alternate" hreflang="fr" href="https://www.noveltria.online/">
+  <link rel="alternate" hreflang="en" href="https://www.noveltria.online/en/">
+  <link rel="alternate" hreflang="es" href="https://www.noveltria.online/es/">
+  <link rel="alternate" hreflang="it" href="https://www.noveltria.online/it/">
+  <link rel="alternate" hreflang="de" href="https://www.noveltria.online/de/">
+  <link rel="alternate" hreflang="zh" href="https://www.noveltria.online/zh/">
+  <link rel="alternate" hreflang="x-default" href="https://www.noveltria.online/en/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NOVELTRIA International Trade Services">
   <meta property="og:locale" content="${n.locale}">
   <meta property="og:title" content="${d.ogTitle}">
   <meta property="og:description" content="${d.ogDesc}">
-  <meta property="og:url" content="https://www.noveltria.com/${lang}/index.html">
-  <meta property="og:image" content="https://www.noveltria.com/assets/images/hero-accueil.png">
+  <meta property="og:url" content="https://www.noveltria.online/${lang}/">
+  <meta property="og:image" content="https://www.noveltria.online/assets/images/hero-accueil.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${d.ogTitle}">
+  <meta name="twitter:description" content="${d.ogDesc}">
+  <meta name="twitter:image" content="https://www.noveltria.online/assets/images/hero-accueil.png">
 
   <!-- Favicon -->\n  <link rel="icon" type="image/png" href="../assets/images/favicon.png">\n\n  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
@@ -264,18 +280,28 @@ function generateIndexHtml(lang) {
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "NOVELTRIA International Trade Services",
-    "alternateName": "NOVELTRIA",
-    "url": "https://www.noveltria.com/${lang}/",
-    "logo": "https://www.noveltria.com/assets/images/logo-full.png",
-    "description": "${d.metaDesc}",
-    "founder": {
-      "@type": "Person",
-      "name": "Laurent Huiskens",
-      "jobTitle": "${lang === 'es' ? 'Fundador' : (lang === 'it' ? 'Fondatore' : (lang === 'de' ? 'Gründer' : '创始人'))}"
-    },
-    "slogan": "${d.heroSlogan.replace(/“|”|„|«|»/g, '')}"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "NOVELTRIA International Trade Services",
+        "alternateName": "NOVELTRIA",
+        "url": "https://www.noveltria.online/"
+      },
+      {
+        "@type": "Organization",
+        "name": "NOVELTRIA International Trade Services",
+        "alternateName": "NOVELTRIA",
+        "url": "https://www.noveltria.online/${lang}/",
+        "logo": "https://www.noveltria.online/assets/images/logo-full.png",
+        "description": "${d.metaDesc}",
+        "founder": {
+          "@type": "Person",
+          "name": "Laurent Huiskens",
+          "jobTitle": "${lang === 'es' ? 'Fundador' : (lang === 'it' ? 'Fondatore' : (lang === 'de' ? 'Gründer' : '创始人'))}"
+        },
+        "slogan": "${d.heroSlogan.replace(/“|”|„|«|»/g, '')}"
+      }
+    ]
   }
   </script>
 </head>

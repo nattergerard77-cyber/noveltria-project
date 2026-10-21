@@ -199,15 +199,31 @@ function generateAboutHtml(lang) {
   <meta name="keywords" content="${d.metaKeywords}">
   <meta name="author" content="Laurent Huiskens">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.noveltria.com/${lang}/about.html">
+  <link rel="canonical" href="https://www.noveltria.online/${lang}/about.html">
+
+  <!-- Multilingual Alternate Links (hreflang) -->
+  <link rel="alternate" hreflang="fr" href="https://www.noveltria.online/about.html">
+  <link rel="alternate" hreflang="en" href="https://www.noveltria.online/en/about.html">
+  <link rel="alternate" hreflang="es" href="https://www.noveltria.online/es/about.html">
+  <link rel="alternate" hreflang="it" href="https://www.noveltria.online/it/about.html">
+  <link rel="alternate" hreflang="de" href="https://www.noveltria.online/de/about.html">
+  <link rel="alternate" hreflang="zh" href="https://www.noveltria.online/zh/about.html">
+  <link rel="alternate" hreflang="x-default" href="https://www.noveltria.online/en/about.html">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="NOVELTRIA International Trade Services">
   <meta property="og:locale" content="${n.locale}">
   <meta property="og:title" content="${d.ogTitle}">
   <meta property="og:description" content="${d.ogDesc}">
-  <meta property="og:url" content="https://www.noveltria.com/${lang}/about.html">
-  <meta property="og:image" content="https://www.noveltria.com/assets/images/hero-apropos.png">
+  <meta property="og:url" content="https://www.noveltria.online/${lang}/about.html">
+  <meta property="og:image" content="https://www.noveltria.online/assets/images/hero-apropos.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${d.ogTitle}">
+  <meta name="twitter:description" content="${d.ogDesc}">
+  <meta name="twitter:image" content="https://www.noveltria.online/assets/images/hero-apropos.png">
 
   <!-- Favicon -->\n  <link rel="icon" type="image/png" href="../assets/images/favicon.png">\n\n  <!-- Stylesheet -->
   <link rel="stylesheet" href="../css/style.css">
